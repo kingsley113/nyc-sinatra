@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Figure Index</title>
+  </head>
+
+  <body>
+    <h2>Figure Index:</h2>
+    <ul>
+      <% @figures.each do |figure| %>
+        <li><a href="/figures/<%=figure.id%>"><%=figure.name%><a></li>
+      <% end %>
+    </ul>
+   
+  </body>
+</html>
